@@ -187,8 +187,6 @@ main,
   color: red;
   cursor: pointer;
 }
-.nav-right button {
-}
 
 .join-nav {
   background-color: rgb(255, 221, 51);
@@ -419,15 +417,11 @@ main {
   margin: 0 auto;
 }
 
-.latest-news {
-}
-
 .txt-spc:hover {
   color: black;
   cursor: pointer;
 }
-.funding {
-}
+
 .funding-top {
   flex-direction: column;
 }
@@ -677,7 +671,6 @@ footer {
   }
   .mid-nav {
     padding: 0 10px;
-    /* width: 100%; */
   }
   .nav-left {
     font-size: 14px;
@@ -725,7 +718,6 @@ footer {
     flex-direction: column;
   }
   .latest-item img {
-    /* width: 100%; */
     height: 150px;
     object-fit: cover;
   }
