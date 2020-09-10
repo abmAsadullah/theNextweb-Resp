@@ -15,39 +15,19 @@ Building a responsive webpage with media queries.
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
-
-
-## Getting Started
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+[Live Demo Link](https://abmasadullah.github.io/theNextweb-Resp/)
 
 ## Authors
 
 👤 **Deyan Todorov**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- GitHub: [@githubhandle](https://github.com/deikdesign)
+- Twitter: [@twitterhandle](https://twitter.com/deikdesign)
 
 👤 **Asadullah**
 
 - GitHub: [@githubhandle](https://github.com/abmasadullah)
 - Twitter: [@twitterhandle](https://twitter.com/abmasadullah)
-
 
 ## 🤝 Contributing
 
