@@ -21,7 +21,13 @@ h2 {
 ul {
   list-style: none;
 }
-
+.stk {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 3;
+}
 .li-style {
   list-style: none;
 }
@@ -169,8 +175,6 @@ ul {
 
 #display-articles {
   display: flex;
-  justify-content: space-around;
-  height: 60vh;
   margin: 2px 0px;
   flex-direction: column;
 }
@@ -205,13 +209,15 @@ ul {
     rgba(46, 32, 32, 0.668) 80%
   );
   background-size: 100% 100%;
-  z-index: 3;
+  z-index: 1;
 }
 
 #article-one {
   background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Screenshot-2020-09-08-at-8.43.57-PM-e1599580066674-796x419.png");
   background-size: cover;
   width: 100%;
+  height: 30vh;
+  margin-bottom: 1%;
 }
 
 #right-articles {
@@ -227,7 +233,7 @@ ul {
 }
 
 #right-articles article {
-  height: 48%;
+  height: 49%;
 }
 
 #right-article-one {
@@ -250,7 +256,7 @@ ul {
     rgba(46, 32, 32, 0.668) 80%
   );
   background-size: 100% 100%;
-  z-index: 14;
+  z-index: 2;
 }
 /* Latest News */
 
@@ -749,12 +755,15 @@ footer {
   #display-articles {
     display: flex;
     flex-direction: row;
+    height: 60vh;
   }
   #right-articles {
     width: 35%;
   }
   #article-one {
-    width: 64%;
+    width: 64.5%;
+    height: 60vh;
+    margin-right: 0.5%;
   }
   .latest-items {
     grid-template-columns: repeat(3, 1fr);
