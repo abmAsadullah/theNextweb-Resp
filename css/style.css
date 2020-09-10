@@ -3,10 +3,8 @@
 }
 
 body {
-  width: 100%;
-  margin: 0;
   padding: 0;
-  background-color: white;
+  overflow-x: hidden;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
@@ -22,8 +20,10 @@ ul {
   list-style: none;
 }
 
+body,
 main,
-.main-image img #display-articles section,
+.main-image img,
+.section,
 #article-one,
 #right-articles,
 .cover-background,
@@ -32,24 +32,87 @@ main,
   width: 100%;
 }
 
+.author-time:hover,
+.nav-src i:hover,
+.nav-time h2,
+.topic:hover,
+.topic-right:hover,
+.topic-funding:hover,
+.title-2:hover,
+.txt-spc:hover,
+.title-3:hover,
+.author-time:hover,
+.fig-det:hover,
+.multiple li:hover,
+.foot-nav ul li:hover {
+  cursor: pointer;
+}
+
+body,
+.nav-time h2,
+.funding-titles,
+.topic,
+.topic-right,
+.topic-funding,
+.title-2,
+.title-4,
+.funding-inside-1 p,
+.funding-inside-bottom p,
+.title-5,
+.category,
+.fig-category,
+.fig-det,
+.foot-nav ul {
+  margin: 0;
+}
+body,
 .stk {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
   background-color: white;
+}
+.c-white,
+.author-time:hover,
+#display-articles a,
+.title-5,
+.main-image-title,
+.title-3,
+footer,
+.foot-nav ul li:hover {
+  color: white;
+}
+
+.relative,
+.nav-left,
+.nav-time,
+#display-articles a,
+#display-articles small,
+.funding-item-4,
+.funding-img,
+.main-image-title {
+  position: absolute;
+}
+
+.fixed,
+.mid-nav-main,
+.sp-btw,
+#right-articles,
+.funding-titles,
+.figcaption {
+  justify-content: space-between;
+}
+
+.stk {
+  position: fixed;
+  top: 0;
   z-index: 10;
+  width: 100%;
 }
 .li-style {
   list-style: none;
 }
 .relative {
   visibility: hidden;
-  position: absolute;
 }
 
-.mid-nav-main {
-  justify-content: space-between;
-}
 .mid-nav-main img {
   width: 106px;
   height: 50px;
@@ -64,10 +127,6 @@ main,
 
 .f-column {
   flex-direction: column;
-}
-
-.sp-btw {
-  justify-content: space-between;
 }
 
 .mrg-16 {
@@ -90,10 +149,6 @@ main,
   padding: 5x 15px;
 }
 
-.c-white {
-  color: white;
-}
-
 .c-orange {
   color: rgb(255, 83, 41);
 }
@@ -114,11 +169,6 @@ main,
   font-size: 14px;
 }
 
-.author-time:hover {
-  cursor: pointer;
-  color: white;
-}
-
 .border-color {
   border: solid 2px black;
 }
@@ -135,10 +185,6 @@ main,
   margin-bottom: 5px;
 }
 
-.fixed {
-  justify-content: space-between;
-}
-
 .fixed li {
   margin-right: 20px;
 }
@@ -153,7 +199,6 @@ main,
 
 .nav-left {
   visibility: hidden;
-  position: absolute;
 }
 
 .nav-right img {
@@ -168,7 +213,6 @@ main,
 }
 .nav-src i:hover {
   color: rgb(48, 46, 46);
-  cursor: pointer;
 }
 .nav-bar i {
   color: red;
@@ -178,14 +222,11 @@ main,
 }
 .nav-time {
   visibility: hidden;
-  position: absolute;
 }
 .nav-time h2 {
-  margin: 0;
   font-size: 25px;
   font-weight: 100;
   color: red;
-  cursor: pointer;
 }
 
 .join-nav {
@@ -219,16 +260,13 @@ main,
 }
 
 #display-articles a {
-  color: white;
   font-size: 36px;
   font-weight: bold;
-  position: absolute;
   bottom: 30px;
   left: 20px;
 }
 
 #display-articles small {
-  position: absolute;
   bottom: 9px;
   left: 18px;
 }
@@ -237,7 +275,7 @@ main,
   position: inherit;
 }
 
-#display-articles section {
+.section {
   position: relative;
   height: 100%;
   background: rgb(254, 66, 14);
@@ -253,14 +291,13 @@ main,
 #article-one {
   background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Screenshot-2020-09-08-at-8.43.57-PM-e1599580066674-796x419.png");
   background-size: cover;
-  height: 30vh;
+  height: 45vh;
   margin-bottom: 1%;
 }
 
 #right-articles {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 60vh;
 }
 
@@ -268,18 +305,16 @@ main,
   font-size: 22px;
 }
 
-#right-articles article {
-  height: 49%;
-}
-
 #right-article-one {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/08/tnw2020-empty_feature_img.jpg");
   background-size: cover;
+  margin-bottom: 3px;
 }
 
 #right-article-two {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/elonstonks-796x448.jpg");
   background-size: cover;
+  margin-top: 3px;
 }
 
 .cover-background {
@@ -324,12 +359,10 @@ main,
 }
 
 .funding-titles {
-  justify-content: space-between;
   display: grid;
   grid-column: 1/5;
   grid-row: 1;
   padding: 0;
-  margin: 0;
   box-sizing: inherit;
 }
 
@@ -366,23 +399,19 @@ ul {
 .topic {
   color: #f42;
   font-size: 28px;
-  margin: 0;
   padding-top: 20px;
 }
 .topic:hover {
   color: black;
-  cursor: pointer;
 }
 .topic-right:hover,
 .topic-funding:hover {
   color: #555;
-  cursor: pointer;
 }
 .topic-right,
 .topic-funding {
   color: #f42;
   font-weight: 100;
-  margin: 0;
   padding: 0;
 }
 
@@ -400,12 +429,10 @@ ul {
 .title-4 {
   color: black;
   font-size: 14px;
-  margin: 0;
 }
 .title-2:hover {
   color: #f42;
   text-decoration: underline;
-  cursor: pointer;
 }
 .price {
   margin: 5px 0 0 0;
@@ -419,7 +446,6 @@ main {
 
 .txt-spc:hover {
   color: black;
-  cursor: pointer;
 }
 
 .funding-top {
@@ -439,11 +465,9 @@ main {
 }
 .funding-item-4 {
   visibility: hidden;
-  position: absolute;
 }
 .funding-img {
   margin: 10px 0 0 10px;
-  position: absolute;
   width: 60px;
   height: 60px;
   background-repeat: no-repeat;
@@ -457,13 +481,11 @@ main {
   border-bottom: 1px solid #f0a599;
 }
 .funding-inside-1 p {
-  margin: 0;
   color: #555555;
   padding: 5px;
   font-size: 13px;
 }
 .funding-inside-bottom p {
-  margin: 0;
   padding: 10px;
   font-size: 12px;
   color: #555555;
@@ -502,8 +524,6 @@ main {
 }
 .title-5 {
   font-size: 16px;
-  color: white;
-  margin: 0;
 }
 .multiple {
   grid-template-columns: repeat(2, 1fr);
@@ -526,25 +546,20 @@ main {
   z-index: -1;
 }
 .main-image-title {
-  position: absolute;
   bottom: 0;
-  color: white;
   padding: 10px;
 }
 .category,
 .fig-category {
   font-size: 13px;
   font-weight: 100;
-  margin: 0;
 }
 .title-3 {
   font-size: 20px;
   margin: 5px 0 0 0;
-  color: white;
 }
 .title-3:hover {
   text-decoration: underline;
-  cursor: pointer;
 }
 .author-time {
   margin: 5px 0 0 0;
@@ -552,16 +567,12 @@ main {
   font-weight: 100;
   color: #555;
 }
-.author-time:hover {
-  color: white;
-  cursor: pointer;
-}
-figcaption {
+
+.figcaption {
   color: #f42;
   margin-top: 2px;
-  justify-content: space-between;
 }
-figcaption img {
+.figcaption img {
   width: 96px;
   height: 96px;
 }
@@ -572,12 +583,10 @@ figcaption img {
 
 .fig-det {
   font-size: 16px;
-  margin: 0;
 }
 
 .fig-det:hover {
   text-decoration: underline;
-  cursor: pointer;
 }
 .multiple {
   grid-template-columns: repeat(1, 1fr);
@@ -595,7 +604,6 @@ figcaption img {
 }
 .multiple li:hover {
   color: #555;
-  cursor: pointer;
 }
 .multiple li:before {
   content: "•";
@@ -615,24 +623,23 @@ figcaption img {
   height: 75px;
   object-fit: cover;
 }
+
 .latest-item-title {
-  margin-left: 10px;
+  padding-left: 10px;
 }
-footer {
-  color: white;
-}
+
 .icons ul li {
   padding: 40px 10px 0 10px;
+}
+
+.foot-nav ul {
 }
 .foot-nav ul li {
   color: #aaa;
   font-size: 13px;
   padding: 30px 10px;
 }
-.foot-nav ul li:hover {
-  color: white;
-  cursor: pointer;
-}
+
 .foot-first {
   background: #131313;
 }
@@ -642,6 +649,33 @@ footer {
   background: #000;
   color: #aaa;
   padding-top: 40px;
+}
+
+.media i {
+  margin: 12px 0 0 0;
+}
+
+.media a {
+  display: inline-block;
+  background: #333;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 0;
+  margin: 35px 8px 0 8px;
+  color: rgb(238, 209, 209);
+  border: 1px solid rgb(80, 75, 75);
+}
+
+.media {
+  display: flex;
+  justify-content: center;
+  text-align: right;
+}
+.media a:hover {
+  background: #131313;
+  border: 1px solid #333;
 }
 
 @media (min-width: 767px) {
@@ -665,6 +699,14 @@ footer {
   .relative li {
     margin-right: 10px;
   }
+
+  .stk {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
   .nav-bar {
     display: none;
     position: absolute;
@@ -720,6 +762,9 @@ footer {
   .latest-item img {
     height: 150px;
     object-fit: cover;
+  }
+  .latest-item-title {
+    padding: 0;
   }
   .funding-top {
     flex-direction: column;
