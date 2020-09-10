@@ -31,16 +31,11 @@ ul {
 .li-style {
   list-style: none;
 }
-
 .relative {
-  padding: 0 20px;
-  background: black;
-  color: white;
-  font-size: 14px;
-  display: block;
-  max-height: 40px;
-  justify-content: space-between;
+  visibility: hidden;
+  position: absolute;
 }
+
 .mid-nav-main {
   justify-content: space-between;
 }
@@ -129,10 +124,6 @@ ul {
   margin-bottom: 5px;
 }
 
-.relative li {
-  margin-right: 10px;
-}
-
 .fixed {
   justify-content: space-between;
 }
@@ -211,9 +202,6 @@ ul {
     rgba(46, 32, 32, 0.668) 80%
   );
 }
-
-/* @media screen and (min-width 1024px) .left-cont img.time {
-} */
 
 #display-articles {
   display: flex;
@@ -300,23 +288,6 @@ ul {
   background-size: 100% 100%;
   z-index: 2;
 }
-/* Latest News */
-
-/*
-@media (min-width 768px) {
-  .titles ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    grid-template-rows: 2fr;
-    column-gap: 1rem;
-    padding: 2rem;
-    list-style-type: none;
-  }
-  */
-
-/* .latest-news {
-  margin: 1rem;
-} */
 
 .titles h2 {
   margin-top: 5rem;
@@ -325,32 +296,6 @@ ul {
   font-weight: bold;
 }
 
-/* media 768 */
-/*
-@media (min-width 768px) {
-  .titles ul {
-    display: grid;
-    grid-template-columns: repeat(2, 4fr);
-    grid-gap: 2rem;
-    margin-top: 3rem;
-    border: solid 2px none;
-    background-color:none;
-  }
-  }
-
-
-/* media 425*/ /*
-@media (min-width 425px) {
-  .titles ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    grid-template-rows: 2fr;
-    column-gap: 1rem;
-    padding: 2rem;
-    list-style-type: none;
-  }
-*/
-/**/
 .titles > ul {
   display: grid;
   grid-template-columns: repeat(4, 4fr);
@@ -369,16 +314,10 @@ ul {
   height: auto;
 }
 
-/*   Funding */
 .funding {
   padding: 2rem;
   padding: 2px;
 }
-
-/* .funding h2 {
-  box-sizing: inherit;
-  padding: 0px 0px 0 40px;
-} */
 
 .funding-titles {
   justify-content: space-between;
@@ -400,90 +339,7 @@ ul {
   font-size: 1.4rem;
   margin-right: 10px;
 }
-/*
-.fund-box-grid {
-display: grid;
-    grid-template-columns: repeat(4, 2fr);
-    grid-template-rows: 1fr;
-    column-gap: 1rem;
-    padding: 2rem;
-}
-*/
-/*media 1024 */
-/* @media (min-width: 1024px) {
-  .fund-box-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 2fr);
-    grid-template-rows: 1fr;
-    column-gap: 1rem;
-    padding: 2rem;
-  }
-} */
 
-/* @media 726 */
-/* @media (min-width: 768px) {
-  .fund-box-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: 1fr;
-    column-gap: 1rem;
-    padding: 2rem;
-  }
-
-  .funding-box {
-    display: block;
-    box-sizing: inherit;
-  }
-
-  .funding-box img {
-    position: absolute;
-    width: 4rem;
-    margin-left: 1rem;
-    margin-top: 0;
-  }
-
-  .funding-box h3 {
-    margin-left: 7rem;
-    font-size: 1.2rem;
-    background: rgb(255, 68, 34);
-    color: white;
-    padding: 0;
-  }
-
-  .funding-box .price1 {
-    background: rgb(255, 235, 231);
-    padding: 0.1rem 0;
-    padding-left: 7rem;
-    font-size: 1.1rem;
-    letter-spacing: 1.2px;
-    font-weight: 500;
-  }
-
-  .upper {
-    background: rgb(255, 68, 34);
-  }
-
-  .funding-box {
-    background: rgb(255, 68, 34);
-    height: 40%;
-  }
-
-  .descr-box {
-    background: rgb(255, 250, 248);
-    height: 100%;
-  }
-  .middle {
-    padding: 0.8rem 1.5rem 0.1rem 1.5rem;
-    font-size: 1rem;
-  }
-
-  .fund-text {
-    padding: 0rem 2rem 1rem 2rem;
-    font-size: 0.8rem;
-  }
-} */
-/* ====================================== */
-/* above this line */
 .main-container {
   margin: 20px;
 }
@@ -525,9 +381,7 @@ ul {
   margin: 0;
   padding: 0;
 }
-/* .item-4 {
-  display: none;
-} */
+
 .d-none {
   display: none;
 }
@@ -794,6 +648,22 @@ footer {
 }
 
 @media (min-width: 767px) {
+  .relative {
+    padding: 0 20px;
+    background: black;
+    color: white;
+    font-size: 14px;
+    display: block;
+    max-height: 40px;
+    justify-content: space-between;
+    display: flex;
+    visibility: visible;
+    position: static;
+    padding-left: 126px;
+  }
+  .relative li {
+    margin-right: 10px;
+  }
   .nav-bar {
     display: none;
     position: absolute;
@@ -802,7 +672,6 @@ footer {
     padding: 0 10px;
     width: 100%;
   }
-  /* nav left */
   .nav-left {
     font-size: 14px;
     color: #aaa;
