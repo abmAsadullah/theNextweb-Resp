@@ -21,6 +21,17 @@ h2 {
 ul {
   list-style: none;
 }
+
+main,
+.main-image img #display-articles section,
+#article-one,
+#right-articles,
+.cover-background,
+.titles ul img,
+.fig-title {
+  width: 100%;
+}
+
 .stk {
   position: -webkit-sticky;
   position: sticky;
@@ -230,7 +241,6 @@ ul {
 
 #display-articles section {
   position: relative;
-  width: 100%;
   height: 100%;
   background: rgb(254, 66, 14);
   background: linear-gradient(
@@ -245,13 +255,11 @@ ul {
 #article-one {
   background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Screenshot-2020-09-08-at-8.43.57-PM-e1599580066674-796x419.png");
   background-size: cover;
-  width: 100%;
   height: 30vh;
   margin-bottom: 1%;
 }
 
 #right-articles {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -277,7 +285,6 @@ ul {
 }
 
 .cover-background {
-  width: 100%;
   height: 100%;
   background: rgb(254, 66, 14);
   background: linear-gradient(
@@ -310,7 +317,6 @@ ul {
 }
 
 .titles ul img {
-  width: 100%;
   height: auto;
 }
 
@@ -410,7 +416,6 @@ ul {
   font-size: 12px;
 }
 main {
-  width: 100%;
   margin: 0 auto;
 }
 
@@ -523,7 +528,6 @@ main {
 }
 .main-image img {
   height: 100%;
-  width: 100%;
   position: relative;
   z-index: -1;
 }
@@ -570,7 +574,6 @@ figcaption img {
 .fig-title {
   background: #fff4f2;
   padding: 10px;
-  width: 100%;
 }
 
 .fig-det {
@@ -648,6 +651,10 @@ footer {
 }
 
 @media (min-width: 767px) {
+  .mid-nav,
+  .latest-item img {
+    width: 100%;
+  }
   .relative {
     padding: 0 20px;
     background: black;
@@ -659,7 +666,7 @@ footer {
     display: flex;
     visibility: visible;
     position: static;
-    padding-left: 126px;
+    padding-left: 20px;
   }
   .relative li {
     margin-right: 10px;
@@ -670,7 +677,7 @@ footer {
   }
   .mid-nav {
     padding: 0 10px;
-    width: 100%;
+    /* width: 100%; */
   }
   .nav-left {
     font-size: 14px;
@@ -718,7 +725,7 @@ footer {
     flex-direction: column;
   }
   .latest-item img {
-    width: 100%;
+    /* width: 100%; */
     height: 150px;
     object-fit: cover;
   }
