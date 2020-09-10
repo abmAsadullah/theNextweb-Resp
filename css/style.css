@@ -4,10 +4,13 @@
 
 body {
   padding: 0;
-  overflow-x: hidden;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-
+.relative,
+.stk {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 h1 {
   font-size: 44px;
 }
