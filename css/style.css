@@ -26,19 +26,30 @@ ul {
   position: sticky;
   top: 0;
   background-color: white;
-  z-index: 3;
+  z-index: 10;
 }
 .li-style {
   list-style: none;
 }
 
 .relative {
+  padding: 0 20px;
   background: black;
   color: white;
   font-size: 14px;
   display: block;
   max-height: 40px;
   justify-content: space-between;
+}
+.mid-nav-main {
+  justify-content: space-between;
+}
+.mid-nav-main img {
+  width: 106px;
+  height: 50px;
+}
+.mid-nav {
+  padding: 0 10px;
 }
 
 .d-flex {
@@ -129,10 +140,6 @@ ul {
 .fixed li {
   margin-right: 20px;
 }
-.nav-left {
-  font-size: 14px;
-  color: #aaa;
-}
 
 .d-block {
   display: inline-block;
@@ -141,10 +148,43 @@ ul {
 .v-middle {
   vertical-align: middle;
 }
+
+.nav-left {
+  visibility: hidden;
+  position: absolute;
+}
+
 .nav-right img {
   width: 125px;
 }
 
+.nav-src i {
+  color: lightgray;
+  padding: 16px;
+  font-size: 16px;
+  border-right: 1px solid lightgray;
+}
+.nav-src i:hover {
+  color: rgb(48, 46, 46);
+  cursor: pointer;
+}
+.nav-bar i {
+  color: red;
+  font-size: 20px;
+  padding: 16px;
+  border-left: 1px solid lightgray;
+}
+.nav-time {
+  visibility: hidden;
+  position: absolute;
+}
+.nav-time h2 {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 100;
+  color: red;
+  cursor: pointer;
+}
 .nav-right button {
 }
 
@@ -152,7 +192,9 @@ ul {
   background-color: rgb(255, 221, 51);
   color: black;
   font-size: 14px;
-  padding: 6px 20px;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
 }
 
 .t-logo {
@@ -752,6 +794,41 @@ footer {
 }
 
 @media (min-width: 767px) {
+  .nav-bar {
+    display: none;
+    position: absolute;
+  }
+  .mid-nav {
+    padding: 0 10px;
+    width: 100%;
+  }
+  /* nav left */
+  .nav-left {
+    font-size: 14px;
+    color: #aaa;
+    visibility: visible;
+    position: static;
+  }
+  .nav-left ul {
+    margin: 0;
+  }
+  .nav-left ul li {
+    margin: 0 10px;
+    line-height: 50px;
+  }
+  .nav-left ul li:hover {
+    color: rgb(48, 46, 46);
+    cursor: pointer;
+  }
+  .join-nav {
+    background-color: rgb(255, 221, 51);
+    color: black;
+    font-size: 14px;
+    padding-left: 126px;
+    height: 30px;
+    text-align: justify;
+    line-height: 30px;
+  }
   #display-articles {
     display: flex;
     flex-direction: row;
@@ -797,6 +874,17 @@ footer {
 }
 
 @media (min-width: 1024px) {
+  .nav-time {
+    visibility: visible;
+    position: relative;
+  }
+  .nav-time h2 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 100;
+    color: red;
+    cursor: pointer;
+  }
   .title-2 {
     font-size: 16px;
   }
